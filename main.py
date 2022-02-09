@@ -8,8 +8,7 @@ class Cmd(object):
     
     def run_cmd(self,cmd):
         print(cmd)
-        a = os.system(cmd)
-        print(a)
+        os.system(cmd)
         
 if __name__ == '__main__':
     code = Cmd()

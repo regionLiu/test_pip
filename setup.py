@@ -4,13 +4,12 @@ import os
 
 class Cmd(object):
     def contribute_cmd(self):
-        cmd = "pip install xlrd"
+        cmd = "sh update_modules.sh"
         return cmd
     
     def run_cmd(self,cmd):
         print(cmd)
-        a = os.system(cmd)
-        print(a)
+        os.system(cmd)
         
 if __name__ == '__main__':
     code = Cmd()
